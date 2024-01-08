@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600&family=Abril+Fatface&family=Archivo:wght@600;700&family=Cabin:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700;800;900&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Gabarito:wght@400;500;600;700;800;900&family=Hind:wght@300;400&family=Lato:wght@300;400;700&family=Libre+Franklin:wght@700&family=Montserrat:ital,wght@0,600;0,800;0,900;1,500&family=Noto+Sans:wght@400;500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,500;6..12,600;6..12,700;6..12,800&family=Onest:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Quicksand:wght@500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .container-fluid{
+            font-family: 'Nunito Sans', sans-serif;
+            background: rgb(234, 243, 250);
+            max-width: 100%;
+            height: 700px;
+        }
+        .container{
+          max-width: 80%;
+          background-color: white;
+          border-radius: 10px;
+          height: 620px;
+        }
+        .h-one{
+          height: 1px;
+          width: 100%;
+          border-top: 2px dashed rgb(165, 165, 165);
+        }
+        .h-two{
+          height: 1px;
+          width: 98%;
+          border-top: 1px solid #ffffff;
+        }
+        .h-three{
+          height: 1px;
+          width: 98%;
+          border-top: 1px dashed #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <h3 class="text-center font-weight-bold text-dark">Payment Method</h3>
+        <h6 class="text-center text-primary">Choose a payment option and fill in the requested information</h6>
+        <div class="container mt-2">
+          <div class="row">
+            <div class="col-lg-8 rounded">
+              <div class="row">
+                <div class="col-9">
+                  <p style="font-size:20px" class="p-3 text-dark font-weight-bold">Payment options</p>
+                </div>
+                <div class="col-3 text-secondary font-size-sm mt-3">
+                  <img src="./images/padlock.png" width="12%"> Secure server
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-9">
+                      <div class="form-check ml-4">
+                        <input class="form-check-input" type="radio" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Credit / debit card
+                        </label>
+                        <p style="font-size:14px" class="text-secondary">Secure transfer using your bank account</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="./images/visa (2).png" width="100%" >
+                    </div>
+                  </div>
+                  <hr class="h-one mx-auto mt-1">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <form action="">
+                          <div class="form-group ">
+                              <label for="name">Name (s)</label>
+                              <input class="form-control" type="text" placeholder="name">
+                          </div>
+                          <div class="form-group">
+                              <label for="cardnumber">Card number</label>
+                              <input class="form-control" type="text" placeholder="1234 1234 1234 1234">
+                          </div>
+                          <div class="form-group">
+                              <label for="postalcode">Postal code</label>
+                              <input class="form-control" type="text" placeholder="682032">
+                          </div>
+                      </form>
+                  </div>
+                  <div class="col-lg-6">
+                      <form action="">
+                          <div class="form-group ">
+                              <label for="name">Last name</label>
+                              <input class="form-control" type="text" placeholder="last name">
+                          </div>
+                          <div class="form-group ">
+                              <div class="row">
+                                  <div class="col">
+                                      <label for="exp">Expiration</label>
+                                      <input class="form-control" type="text" placeholder="MM/YY">
+                                  </div>
+                                  <div class="col">
+                                      <label for="exp">CVV</label>
+                                      <input class="form-control" type="password" placeholder="123">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="mailt">Email</label>
+                              <input class="form-control" type="text" placeholder="xyz@gmail.con">
+                          </div>
+                      </form>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">Paypal</label>
+                        <p style="font-size:14px; color:rgb(165, 165, 165)">Secure online payment through the PayPal portal</p>
+                    </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="pay-p">
+                        <img src="./images/paypal.png" width="80%">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 bg-primary rounded text-white">
+              <div class="card-title">
+                <p class="font-weight-bold mt-4 text-center " style="font-size: 20px;">Payment settings</p>
+            </div>
+            <div class="card-text">
+                <p class="font-weight-bold mt-4" style="font-size: 16px">Basic plan</p>
+                <p class="font-weight-light" style="font-size: 17px">With limited access to the template catalog and basic editing.</p>
+                <hr class="h-two mx-auto mt-1">
+                <div class="row">
+                    <div class="col">Transaction date:</div>
+                    <div class="col">30/04/2021</div>
+                    <div class="w-100"></div>
+                    <div class="col">Hour:</div>
+                    <div class="col">12:48 PM</div>
+                </div>
+                <hr class="h-three mx-auto mt-4">
+                <div class="row">
+                    <div class="col">Subtotal:</div>
+                    <div class="col">$29.00 USD</div>
+                    <div class="w-100"></div>
+                    <div class="col">Discount:</div>
+                    <div class="col">$0.00 USD</div>
+                </div>
+                <hr class="h-two mx-auto mt-4">
+                <p class="text-right font-weight-bold">Total: $29.99 USD</p>
+            </div>
+            <button type="button" class="btn btn-dark mt-5  btn-md btn-block mx-auto rounded">Done</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
